@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Zahin Uddin Nirob — AI-Powered Full-Stack Developer</title>
+  <meta name="description" content="MD Zahin Uddin Nirob is an AI-powered full-stack developer, software engineer, and researcher from Bangladesh, studying at Islamic University of Technology (IUT).">
+  <meta name="keywords" content="Zahin Uddin Nirob, Full-Stack Developer, Software Engineer, React, Node.js, PostgreSQL, IUT, Bangladesh, eFVerse">
+  <meta name="author" content="MD Zahin Uddin Nirob">
+  <meta property="og:title" content="MD Zahin Uddin Nirob — AI-Powered Full-Stack Developer">
+  <meta property="og:description" content="Developer · Builder · Researcher. Building thoughtful software, exploring intelligent systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zahin002.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════ -->
+  <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-text">ZUN</span><span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links" id="nav-links-list">
+        <li><a href="#hero"       class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="#about"      class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#projects"   class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#research"   class="nav-link" id="nav-research">Research</a></li>
+        <li><a href="#services"   class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-exp">Experience</a></li>
+        <li><a href="#contact"    class="nav-link nav-link--cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-links">
+        <li><a href="#hero"               class="mobile-link" id="m-home">Home</a></li>
+        <li><a href="#about"              class="mobile-link" id="m-about">About</a></li>
+        <li><a href="#projects"           class="mobile-link" id="m-projects">Projects</a></li>
+        <li><a href="#currently-building" class="mobile-link" id="m-building">Currently Building</a></li>
+        <li><a href="#research"           class="mobile-link" id="m-research">Research</a></li>
+        <li><a href="#services"           class="mobile-link" id="m-services">Services</a></li>
+        <li><a href="#experience"         class="mobile-link" id="m-exp">Experience</a></li>
+        <li><a href="#contact"            class="mobile-link" id="m-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="Hero section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-tag animate-in" data-delay="0" id="hero-tag">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <div class="hero-name animate-in" data-delay="1" id="hero-name">MD Zahin Uddin Nirob</div>
+        <h1 class="hero-title" id="hero-title">
+          <span class="title-line animate-in" data-delay="2">AI-POWERED</span>
+          <span class="title-line animate-in" data-delay="3">FULL-STACK</span>
+          <span class="title-line title-outline animate-in" data-delay="4">DEVELOPER</span>
+        </h1>
+        <div class="hero-identity animate-in" data-delay="5" id="hero-identity">
+          <span>Software Engineer</span>
+          <span class="sep" aria-hidden="true">•</span>
+          <span>Researcher</span>
+          <span class="sep" aria-hidden="true">•</span>
+          <span>Builder</span>
+        </div>
+        <p class="hero-quote animate-in" data-delay="6" id="hero-quote">
+          "Building thoughtful software, exploring intelligent systems,<br>and turning ideas into working products."
+        </p>
+        <div class="hero-ctas animate-in" data-delay="7" id="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-work">View My Work</a>
+          <a href="#contact"  class="btn btn-ghost"   id="hero-cta-connect">
+            Let's Connect <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="hero-socials animate-in" data-delay="8" id="hero-socials">
+          <a href="https://github.com/zahin002"         target="_blank" rel="noopener" class="hero-social" id="hs-github"   aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/md-zahin-uddin-nirob-794ba2305" target="_blank" rel="noopener" class="hero-social" id="hs-linkedin" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:zahinuddinnirob001@gmail.com" class="hero-social" id="hs-email" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right animate-in" data-delay="3" id="hero-visual">
+        <div class="photo-frame">
+          <div class="photo-bg" aria-hidden="true"></div>
+          <img src="assets/profile.jpg" alt="MD Zahin Uddin Nirob, AI-Powered Full-Stack Developer" class="profile-photo" id="profile-photo">
+          <div class="photo-placeholder" id="photo-placeholder" aria-hidden="true"><span>ZUN</span></div>
+        </div>
+        <div class="floating-card fc-top" id="fc-arch" aria-hidden="true">
+          <span class="fc-icon">⚡</span><span class="fc-text">Architecture-First</span>
+        </div>
+        <div class="floating-card fc-bottom" id="fc-iut" aria-hidden="true">
+          <span class="fc-icon">🎓</span><span class="fc-text">IUT · SWE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════════════ -->
+  <section id="about" class="section about" aria-label="About section">
+    <div class="container">
+      <p class="section-label reveal" id="about-label">01 / ABOUT</p>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-heading reveal" id="about-heading">
+            Building with<br><em>intention</em>.
+          </h2>
+          <blockquote class="about-quote reveal" id="about-quote">
+            "I like understanding the architecture before I start building the system."
+          </blockquote>
+          <p class="about-body reveal">
+            I'm a Software Engineering student at <strong>Islamic University of Technology (IUT)</strong>,
+            passionate about understanding technology at a deeper level — not just using tools, but knowing
+            how and why they work.
+          </p>
+          <p class="about-body reveal">
+            My approach is architecture-first. Before writing a single line of code, I think about system
+            structure, data flow, component relationships, and maintainability. I enjoy researching unfamiliar
+            topics, designing thoughtful solutions, and building real software that solves real problems.
+          </p>
+          <p class="about-body reveal">
+            Beyond full-stack development, I'm exploring AI-powered systems, OCR research for
+            handwritten Bangla and mathematical expressions, and actively building two products:
+            <strong>Oltiva</strong> and <strong>Kaito</strong>.
+          </p>
+        </div>
+        <div class="about-right reveal" id="about-details">
+          <div class="detail-cards">
+            <div class="detail-card" id="dc-status">
+              <span class="detail-label">Currently</span>
+              <span class="detail-value">BSc Software Engineering · IUT-OIC</span>
+            </div>
+            <div class="detail-card" id="dc-focus">
+              <span class="detail-label">Focus Areas</span>
+              <span class="detail-value">Full-Stack · AI/ML · Database Design · Architecture</span>
+            </div>
+            <div class="detail-card" id="dc-building">
+              <span class="detail-label">Currently Building</span>
+              <span class="detail-value">Oltiva &amp; Kaito</span>
+            </div>
+            <div class="detail-card" id="dc-research-card">
+              <span class="detail-label">Research</span>
+              <span class="detail-value">Handwritten Expression Recognition (Bangla + Math)</span>
+            </div>
+            <div class="detail-card" id="dc-loc">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Mirpur-2, Dhaka · Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════════════════════ -->
+  <section id="education" class="section education" aria-label="Education section">
+    <div class="container">
+      <p class="section-label reveal" id="edu-label">02 / EDUCATION</p>
+      <h2 class="section-heading reveal" id="edu-heading">Academic<br>Journey.</h2>
+      <div class="edu-grid">
+
+        <!-- IUT — Featured -->
+        <article class="edu-card edu-card--featured reveal" id="edu-iut" aria-label="IUT education">
+          <div class="edu-card-inner">
+            <div class="edu-header">
+              <div class="edu-badge">Current · 2023–2028</div>
+              <div class="edu-year">Batch '23</div>
+            </div>
+            <h3 class="edu-degree">BSc in Software Engineering</h3>
+            <p class="edu-dept">Dept. of Computer Science &amp; Engineering</p>
+            <p class="edu-inst">Islamic University of Technology (IUT-OIC)</p>
+            <p class="edu-loc">Gazipur, Bangladesh</p>
+            <div class="edu-tags">
+              <span>Software Engineering</span>
+              <span>Computer Science</span>
+              <span>Research</span>
+            </div>
+          </div>
+          <div class="edu-card-accent" aria-hidden="true"></div>
+        </article>
+
+        <div class="edu-secondary">
+          <!-- Notre Dame -->
+          <article class="edu-card reveal" id="edu-ndc" aria-label="Notre Dame College">
+            <div class="edu-header">
+              <div class="edu-badge edu-badge--dim">Completed · 2023</div>
+            </div>
+            <h3 class="edu-degree edu-degree--sm">Higher Secondary Certificate (HSC)</h3>
+            <p class="edu-inst">Notre Dame College, Dhaka</p>
+            <p class="edu-loc">Dhaka, Bangladesh</p>
+          </article>
+
+          <!-- Monipur -->
+          <article class="edu-card reveal" id="edu-monipur" aria-label="Monipur High School">
+            <div class="edu-header">
+              <div class="edu-badge edu-badge--dim">Completed · 2021</div>
+            </div>
+            <h3 class="edu-degree edu-degree--sm">Secondary School Certificate (SSC)</h3>
+            <p class="edu-inst">Monipur High School &amp; College</p>
+            <p class="edu-loc">Main Boys Morning Shift · Dhaka</p>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════════════════ -->
+  <section id="skills" class="section skills" aria-label="Skills section">
+    <div class="container">
+      <p class="section-label reveal" id="skills-label">03 / SKILLS</p>
+      <h2 class="section-heading reveal" id="skills-heading">Tech &amp; Tools.</h2>
+      <p class="skills-note reveal" id="skills-note">No fake 95% bars — here's what I actually work with.</p>
+      <div class="skills-grid reveal" id="skills-grid">
+        <div class="skill-category" id="sk-frontend">
+          <div class="skill-cat-label">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">UI Design</span>
+          </div>
+        </div>
+        <div class="skill-category" id="sk-backend">
+          <div class="skill-cat-label">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Socket.io</span>
+          </div>
+        </div>
+        <div class="skill-category" id="sk-db">
+          <div class="skill-cat-label">Database</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Database Design</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category" id="sk-prog">
+          <div class="skill-cat-label">Programming</div>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaFX</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">OOP</span>
+          </div>
+        </div>
+        <div class="skill-category" id="sk-dev">
+          <div class="skill-cat-label">Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Architecture</span>
+            <span class="skill-tag">Tech Docs</span>
+          </div>
+        </div>
+        <div class="skill-category" id="sk-tools">
+          <div class="skill-cat-label">Productivity</div>
+          <div class="skill-tags">
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════════════════ -->
+  <section id="projects" class="section projects" aria-label="Projects section">
+    <div class="container">
+      <p class="section-label reveal" id="projects-label">04 / PROJECTS</p>
+      <h2 class="section-heading reveal" id="projects-heading">Featured Work.</h2>
+
+      <!-- eFVerse — Featured Large Card -->
+      <article class="project-featured reveal" id="proj-efverse" aria-label="eFVerse project">
+        <div class="project-featured-info">
+          <div class="pf-num">01</div>
+          <div class="pf-badge">Full-Stack / DBMS</div>
+          <h3 class="pf-name">eFVerse</h3>
+          <p class="pf-desc">
+            A web platform and companion database system designed around eFootball data and
+            tournament organization. Demonstrates full-stack development, relational database design,
+            structured data management, and practical web application architecture.
+          </p>
+          <div class="pf-tech" aria-label="Technologies used">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>REST API</span>
+          </div>
+          <div class="pf-links">
+            <a href="https://github.com/zahin002/eFVerse" target="_blank" rel="noopener noreferrer"
+               class="proj-link" id="efverse-github">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://efverse-hub.vercel.app/" target="_blank" rel="noopener noreferrer"
+               class="proj-link proj-link--accent" id="efverse-live">Live Demo <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="project-featured-visual" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-header">
+              <div class="mock-dots">
+                <span class="md-red"></span><span class="md-yellow"></span><span class="md-green"></span>
+              </div>
+              <span class="mock-title">eFVerse Hub</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-row"><span>🏆</span> Tournament Manager</div>
+              <div class="mock-row"><span>⚽</span> eFootball Data Hub</div>
+              <div class="mock-row"><span>📊</span> Player Analytics</div>
+              <div class="mock-row"><span>🗄️</span> PostgreSQL Backend</div>
+              <div class="mock-row"><span>🔗</span> REST API Layer</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Squiggle -->
+        <article class="project-card reveal" id="proj-squiggle">
+          <div class="pc-header">
+            <span class="pc-num">02</span>
+            <span class="pc-status dev">In Development</span>
+          </div>
+          <h3 class="pc-name">Squiggle</h3>
+          <p class="pc-type">Real-Time Multiplayer Game</p>
+          <p class="pc-desc">A browser-based multiplayer drawing and guessing game inspired by Skribbl, with expanded game modes and real-time WebSocket communication.</p>
+          <div class="pc-tech"><span>React</span><span>Socket.io</span><span>Node.js</span></div>
+          <div class="pc-footer">
+            <a href="https://github.com/zahin002/Squiggle" target="_blank" rel="noopener"
+               class="proj-link-sm" id="squiggle-github">GitHub ↗</a>
+            <span class="dev-label" aria-label="In Development">🚧 Active Development</span>
+          </div>
+        </article>
+
+        <!-- CINE++ — terminal card -->
+        <article class="project-card project-card--terminal reveal" id="proj-cine">
+          <div class="pc-header">
+            <span class="pc-num">03</span>
+            <span class="pc-terminal-badge">Terminal</span>
+          </div>
+          <h3 class="pc-name">CINE++</h3>
+          <p class="pc-type">Cinema Hall Management System</p>
+          <p class="pc-desc">First major software project. Terminal-based cinema management with OOP, seat allocation, booking, refunds, reviews, and file-based persistence.</p>
+          <div class="pc-tech"><span>C++</span><span>OOP</span><span>File I/O</span></div>
+          <div class="pc-footer">
+            <a href="https://github.com/zahin002/Cinema-Hall-Management-System" target="_blank" rel="noopener"
+               class="proj-link-sm" id="cine-github">GitHub ↗</a>
+          </div>
+          <div class="terminal-deco" aria-hidden="true">
+            <span>$ ./cinema --run</span>
+            <span class="t-cursor">▋</span>
+          </div>
+        </article>
+
+        <!-- Food Delivery App -->
+        <article class="project-card reveal" id="proj-food">
+          <div class="pc-header">
+            <span class="pc-num">04</span>
+          </div>
+          <h3 class="pc-name">Food Delivery App</h3>
+          <p class="pc-type">Java / OOP Desktop Application</p>
+          <p class="pc-desc">JavaFX food delivery application with JSON storage, layered OOP architecture, and a JAX-WS WSDL web service API layer.</p>
+          <div class="pc-tech"><span>Java</span><span>JavaFX</span><span>OOP</span><span>JAX-WS</span><span>JSON</span></div>
+          <div class="pc-footer">
+            <a href="https://github.com/zahin002/Food-Delivery-App" target="_blank" rel="noopener"
+               class="proj-link-sm" id="food-github">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- Blackjack -->
+        <article class="project-card reveal" id="proj-blackjack">
+          <div class="pc-header">
+            <span class="pc-num">05</span>
+            <span class="pc-terminal-badge">Digital Logic</span>
+          </div>
+          <h3 class="pc-name">Blackjack</h3>
+          <p class="pc-type">Digital Logic Design Project</p>
+          <p class="pc-desc">A collaborative Blackjack game designed as a Digital Logic Design project, implemented and simulated using Proteus. Demonstrates hardware-oriented system thinking.</p>
+          <div class="pc-tech"><span>Digital Logic</span><span>Proteus</span><span>Circuit Design</span></div>
+          <div class="pc-footer">
+            <span class="dev-label">🎓 University Project</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       CURRENTLY BUILDING
+  ════════════════════════════════════════════════════ -->
+  <section id="currently-building" class="section building" aria-label="Currently building section">
+    <div class="container">
+      <p class="section-label reveal" id="building-label">05 / BUILDING</p>
+      <h2 class="section-heading reveal" id="building-heading">Currently<br>Building.</h2>
+      <div class="building-grid">
+
+        <article class="building-card reveal" id="build-oltiva">
+          <div class="bc-num">01</div>
+          <div class="bc-badge"><span class="pulse-dot" aria-hidden="true"></span>Currently Building</div>
+          <h3 class="bc-name">OLTIVA</h3>
+          <p class="bc-desc">
+            A connected personal workspace for learning, productivity, projects, career &amp; life.
+            Planned across Web Platform, Mobile Application, and an Open-Source Core — an ambitious
+            long-term product built with architectural clarity from day one.
+          </p>
+          <div class="bc-platforms">
+            <span>🌐 Web Platform</span><span>📱 Mobile App</span><span>🔓 Open-Source</span>
+          </div>
+          <div class="bc-progress">
+            <p class="bc-progress-label">In Development</p>
+            <div class="bc-dots"><span class="bd active"></span><span class="bd active"></span>
+              <span class="bd active"></span><span class="bd"></span><span class="bd"></span></div>
+          </div>
+        </article>
+
+        <article class="building-card reveal" id="build-kaito">
+          <div class="bc-num">02</div>
+          <div class="bc-badge"><span class="pulse-dot" aria-hidden="true"></span>Currently Building</div>
+          <h3 class="bc-name">KAITO</h3>
+          <p class="bc-desc">
+            An e-commerce platform for Zahin's own clothing brand. Combines software development
+            with entrepreneurship — demonstrating the ability to build technology for a real business
+            from the ground up.
+          </p>
+          <div class="bc-platforms">
+            <span>🛍️ E-Commerce</span><span>👗 Clothing Brand</span><span>🚀 Real Product</span>
+          </div>
+          <div class="bc-progress">
+            <p class="bc-progress-label">In Development</p>
+            <div class="bc-dots"><span class="bd active"></span><span class="bd active"></span>
+              <span class="bd"></span><span class="bd"></span><span class="bd"></span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       RESEARCH
+  ════════════════════════════════════════════════════ -->
+  <section id="research" class="section research" aria-label="Research section">
+    <div class="container">
+      <p class="section-label reveal" id="research-label">06 / RESEARCH</p>
+      <div class="research-banner reveal" id="research-banner">
+        <span>BANGLA</span><span class="rb-plus">+</span>
+        <span>ENGLISH</span><span class="rb-plus">+</span>
+        <span>MATHEMATICS</span>
+      </div>
+      <div class="research-content">
+        <div class="research-info reveal" id="research-info">
+          <div class="research-tag">🔬 Ongoing Research</div>
+          <h3 class="research-title">Handwritten Expression Recognition</h3>
+          <p class="research-desc">
+            Existing OCR systems struggle to accurately recognize and reconstruct handwritten Bangla text
+            and mathematical expressions appearing together in educational documents — especially into
+            a structured, editable format such as LaTeX.
+          </p>
+          <p class="research-desc">
+            This research explores multimodal document understanding for the specific combination of
+            Bangla script, English text, and mathematical notation — inspired by work such as
+            <em>UniRec-0.1B: Unified Text and Formula Recognition</em>.
+          </p>
+          <div class="research-note">
+            ✦ Ongoing exploration. No fabricated results or publications.
+          </div>
+        </div>
+        <div class="research-flow reveal" id="research-flow">
+          <p class="flow-title">Recognition Pipeline</p>
+          <div class="flow-step" id="flow-1">
+            <div class="flow-icon">✍️</div><span>Handwritten Educational Document</span>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-step" id="flow-2">
+            <div class="flow-icon">🤖</div><span>AI / OCR Multimodal Processing</span>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-step" id="flow-3">
+            <div class="flow-icon">🔤</div><span>Structured Representation</span>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-step" id="flow-4">
+            <div class="flow-icon">📄</div><span>LaTeX / Digital Editable Output</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       HOW I BUILD
+  ════════════════════════════════════════════════════ -->
+  <section id="how-i-build" class="section process" aria-label="How I build section">
+    <div class="container">
+      <p class="section-label reveal" id="process-label">07 / PROCESS</p>
+      <h2 class="section-heading reveal" id="process-heading">How I<br>Build.</h2>
+      <p class="process-sub reveal" id="process-sub">
+        "I prefer understanding the goal clearly and designing the system architecture before jumping into implementation."
+      </p>
+      <div class="process-scroll-wrap">
+        <div class="process-flow" id="process-flow">
+          <div class="ps-item" id="ps-idea">
+            <div class="ps-card"><div class="ps-num">01</div><div class="ps-name">IDEA</div><p class="ps-desc">Clarify the problem. Define what success looks like.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-req">
+            <div class="ps-card"><div class="ps-num">02</div><div class="ps-name">REQUIREMENTS</div><p class="ps-desc">Map functional and non-functional requirements.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-arch">
+            <div class="ps-card active"><div class="ps-num">03</div><div class="ps-name">ARCHITECTURE</div><p class="ps-desc">Design structure, data models, and component relationships.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-design">
+            <div class="ps-card"><div class="ps-num">04</div><div class="ps-name">DESIGN</div><p class="ps-desc">Translate architecture into visual interfaces and flows.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-dev">
+            <div class="ps-card"><div class="ps-num">05</div><div class="ps-name">DEVELOPMENT</div><p class="ps-desc">Build with clean, maintainable, purposeful code.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-test">
+            <div class="ps-card"><div class="ps-num">06</div><div class="ps-name">TESTING</div><p class="ps-desc">Validate functionality, edge cases, and experience.</p></div>
+          </div>
+          <div class="ps-connector"><div class="conn-line"></div><div class="conn-arrow">›</div></div>
+          <div class="ps-item" id="ps-refine">
+            <div class="ps-card"><div class="ps-num">07</div><div class="ps-name">REFINEMENT</div><p class="ps-desc">Iterate. Polish until it feels right.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════════════════════ -->
+  <section id="experience" class="section experience" aria-label="Experience section">
+    <div class="container">
+      <p class="section-label reveal" id="exp-label">08 / EXPERIENCE</p>
+      <h2 class="section-heading reveal" id="exp-heading">Experience &amp;<br>Involvement.</h2>
+      <div class="exp-grid">
+
+        <article class="exp-card reveal" id="exp-kaito">
+          <div class="exp-header">
+            <div class="exp-role-badge exp-badge--founder">Co-Founder</div>
+            <div class="exp-duration">Ongoing</div>
+          </div>
+          <h3 class="exp-role">Co-Founder — Kaito</h3>
+          <p class="exp-org">Kaito Clothing Brand</p>
+          <p class="exp-desc">
+            Co-founded and building the digital presence and e-commerce platform for Kaito,
+            a clothing brand. Combines entrepreneurship with software development — designing
+            and building the full tech infrastructure from the ground up.
+          </p>
+          <div class="exp-tags"><span>Entrepreneurship</span><span>E-Commerce</span><span>Full-Stack</span></div>
+        </article>
+
+        <article class="exp-card reveal" id="exp-research">
+          <div class="exp-header">
+            <div class="exp-role-badge exp-badge--research">Researcher</div>
+            <div class="exp-duration">Ongoing</div>
+          </div>
+          <h3 class="exp-role">Independent Researcher</h3>
+          <p class="exp-org">Handwritten Expression Recognition</p>
+          <p class="exp-desc">
+            Exploring AI-powered OCR for mixed Bangla, English, and mathematical handwritten
+            educational documents — targeting structured LaTeX reconstruction.
+            Inspired by multimodal document understanding research.
+          </p>
+          <div class="exp-tags"><span>AI / OCR</span><span>Research</span><span>LaTeX</span></div>
+        </article>
+
+        <article class="exp-card reveal" id="exp-tutor">
+          <div class="exp-header">
+            <div class="exp-role-badge exp-badge--tutor">Tutor</div>
+            <div class="exp-duration">2+ Years</div>
+          </div>
+          <h3 class="exp-role">HSC Physics &amp; Higher Mathematics Tutor</h3>
+          <p class="exp-org">Private Tutoring</p>
+          <p class="exp-desc">
+            More than two years of tutoring experience primarily teaching HSC-level students
+            in Physics and Higher Mathematics. Developed strong communication and structured
+            teaching skills.
+          </p>
+          <div class="exp-tags"><span>Physics</span><span>Mathematics</span><span>HSC</span></div>
+        </article>
+
+        <article class="exp-card reveal" id="exp-projects">
+          <div class="exp-header">
+            <div class="exp-role-badge exp-badge--student">Software Projects</div>
+            <div class="exp-duration">IUT · 2023–</div>
+          </div>
+          <h3 class="exp-role">University Project Contributor</h3>
+          <p class="exp-org">Islamic University of Technology</p>
+          <p class="exp-desc">
+            Multiple collaborative software projects spanning DBMS, Software Project Lab, OOP,
+            Digital Logic Design, and other coursework — from database systems to hardware simulation.
+          </p>
+          <div class="exp-tags"><span>DBMS</span><span>OOP</span><span>Digital Logic</span><span>Collaboration</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       CURIOUS BY DEFAULT
+  ════════════════════════════════════════════════════ -->
+  <section id="curious" class="section curious-section" aria-label="Curious by default section">
+    <div class="container">
+      <p class="section-label reveal" id="curious-label">09 / MINDSET</p>
+      <h2 class="section-heading reveal" id="curious-heading">Curious<br>by Default.</h2>
+      <p class="curious-sub reveal" id="curious-sub">
+        Zahin enjoys learning unfamiliar subjects in depth — not stopping at surface-level understanding.
+      </p>
+      <div class="curious-grid reveal" id="curious-grid">
+        <div class="curious-card" id="cu-research">
+          <div class="curious-icon">📄</div>
+          <h4 class="curious-name">Research Papers</h4>
+          <p class="curious-desc">Reads published research to understand ideas at their source</p>
+        </div>
+        <div class="curious-card" id="cu-ai">
+          <div class="curious-icon">🤖</div>
+          <h4 class="curious-name">Artificial Intelligence</h4>
+          <p class="curious-desc">Exploring AI systems, OCR, and multimodal document understanding</p>
+        </div>
+        <div class="curious-card" id="cu-arch">
+          <div class="curious-icon">🏗️</div>
+          <h4 class="curious-name">Software Architecture</h4>
+          <p class="curious-desc">How large systems are structured, scaled, and maintained</p>
+        </div>
+        <div class="curious-card" id="cu-db">
+          <div class="curious-icon">🗄️</div>
+          <h4 class="curious-name">Database Systems</h4>
+          <p class="curious-desc">Deep interest in relational design, query optimization, and data modeling</p>
+        </div>
+        <div class="curious-card" id="cu-algo">
+          <div class="curious-icon">🧮</div>
+          <h4 class="curious-name">Algorithms &amp; DSA</h4>
+          <p class="curious-desc">Understanding complexity, efficiency, and elegant problem-solving</p>
+        </div>
+        <div class="curious-card" id="cu-exp">
+          <div class="curious-icon">🔬</div>
+          <h4 class="curious-name">Experimental Projects</h4>
+          <p class="curious-desc">Building things to understand how they work — not just using them</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════════════════ -->
+  <section id="services" class="section services" aria-label="Services section">
+    <div class="container">
+      <p class="section-label reveal" id="services-label">10 / SERVICES</p>
+      <h2 class="section-heading reveal" id="services-heading">What I<br>Can Build.</h2>
+      <div class="services-list" id="services-list">
+        <div class="service-item reveal" id="svc-fullstack">
+          <span class="svc-num">01</span>
+          <div class="svc-content">
+            <span class="svc-name">FULL-STACK DEVELOPMENT</span>
+            <span class="svc-detail">Modern web applications — frontend to backend, API, database</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="service-item reveal" id="svc-db">
+          <span class="svc-num">02</span>
+          <div class="svc-content">
+            <span class="svc-name">DATABASE DESIGN</span>
+            <span class="svc-detail">Structured databases and data models using PostgreSQL</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="service-item reveal" id="svc-ui">
+          <span class="svc-num">03</span>
+          <div class="svc-content">
+            <span class="svc-name">UI DESIGN</span>
+            <span class="svc-detail">Clean, practical, user-focused interfaces for web applications</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="service-item reveal" id="svc-arch">
+          <span class="svc-num">04</span>
+          <div class="svc-content">
+            <span class="svc-name">SOFTWARE ARCHITECTURE</span>
+            <span class="svc-detail">From idea to architecture before code — a distinctive strength</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="service-item reveal" id="svc-docs">
+          <span class="svc-num">05</span>
+          <div class="svc-content">
+            <span class="svc-name">TECHNICAL DOCUMENTATION</span>
+            <span class="svc-detail">Organized documentation, system specs, and LaTeX materials</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="service-item service-dim reveal" id="svc-tutor">
+          <span class="svc-num">06</span>
+          <div class="svc-content">
+            <span class="svc-name">TUTORING</span>
+            <span class="svc-detail">HSC Physics &amp; Higher Mathematics · 2+ years experience</span>
+          </div>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       BEYOND CODE
+  ════════════════════════════════════════════════════ -->
+  <section id="beyond-code" class="section beyond" aria-label="Beyond code section">
+    <div class="container">
+      <p class="section-label reveal" id="beyond-label">11 / HUMAN</p>
+      <h2 class="section-heading reveal" id="beyond-heading">Beyond<br>Code.</h2>
+      <div class="hobbies-grid reveal" id="hobbies-grid">
+        <div class="hobby-card" id="hob-football"><span class="hobby-emoji" aria-hidden="true">⚽</span><span class="hobby-name">Football</span></div>
+        <div class="hobby-card" id="hob-cricket"><span class="hobby-emoji" aria-hidden="true">🏏</span><span class="hobby-name">Cricket</span></div>
+        <div class="hobby-card" id="hob-cats"><span class="hobby-emoji" aria-hidden="true">🐈</span><span class="hobby-name">Cats</span></div>
+        <div class="hobby-card" id="hob-parrots"><span class="hobby-emoji" aria-hidden="true">🦜</span><span class="hobby-name">Parrots</span></div>
+        <div class="hobby-card" id="hob-gaming"><span class="hobby-emoji" aria-hidden="true">🎮</span><span class="hobby-name">Video Games</span></div>
+        <div class="hobby-card" id="hob-drawing"><span class="hobby-emoji" aria-hidden="true">🎨</span><span class="hobby-name">Drawing</span></div>
+        <div class="hobby-card" id="hob-movies"><span class="hobby-emoji" aria-hidden="true">🎬</span><span class="hobby-name">Movies &amp; Series</span></div>
+        <div class="hobby-card" id="hob-anime"><span class="hobby-emoji" aria-hidden="true">🍿</span><span class="hobby-name">Anime</span></div>
+        <div class="hobby-card" id="hob-outings"><span class="hobby-emoji" aria-hidden="true">🌿</span><span class="hobby-name">Outings</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════════════ -->
+  <section id="contact" class="section contact" aria-label="Contact section">
+    <div class="container">
+      <p class="section-label reveal" id="contact-label">12 / CONTACT</p>
+      <h2 class="contact-heading reveal" id="contact-heading">
+        LET'S BUILD<br>SOMETHING<br>INTERESTING.
+      </h2>
+      <p class="contact-sub reveal" id="contact-sub">
+        Whether it's a software project, research collaboration, technical discussion,
+        or an interesting idea — reach out.
+      </p>
+
+      <!-- Primary contact methods -->
+      <div class="contact-primary reveal" id="contact-primary">
+        <a href="mailto:zahinuddinnirob001@gmail.com" class="contact-link contact-link--main" id="clink-email">
+          <span class="cl-icon" aria-hidden="true">✉️</span>
+          <div class="cl-content">
+            <span class="cl-label">Email (Preferred)</span>
+            <span class="cl-val">zahinuddinnirob001@gmail.com</span>
+          </div>
+          <span class="cl-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/md-zahin-uddin-nirob-794ba2305" target="_blank"
+           rel="noopener noreferrer" class="contact-link contact-link--main" id="clink-linkedin">
+          <span class="cl-icon" aria-hidden="true">💼</span>
+          <div class="cl-content">
+            <span class="cl-label">LinkedIn (Preferred)</span>
+            <span class="cl-val">md-zahin-uddin-nirob</span>
+          </div>
+          <span class="cl-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <!-- Secondary social -->
+      <div class="contact-socials reveal" id="contact-socials">
+        <a href="https://github.com/zahin002" target="_blank" rel="noopener" class="social-pill" id="cs-github">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.facebook.com/zahin.uddin005" target="_blank" rel="noopener" class="social-pill" id="cs-fb">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/zahin_002_" target="_blank" rel="noopener" class="social-pill" id="cs-ig">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <div class="social-pill social-pill--info" id="cs-discord">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.003.022.01.04.028.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          zunirob_02
+        </div>
+      </div>
+
+      <!-- Location -->
+      <p class="contact-location reveal" id="contact-location">
+        📍 Mirpur-2, Dhaka-1216, Bangladesh
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">ZUN<span class="logo-dot">.</span></span>
+          <p>MD Zahin Uddin Nirob — AI-Powered Full-Stack Developer</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about"      id="fnav-about">About</a>
+          <a href="#projects"   id="fnav-projects">Projects</a>
+          <a href="#research"   id="fnav-research">Research</a>
+          <a href="#services"   id="fnav-services">Services</a>
+          <a href="#experience" id="fnav-exp">Experience</a>
+          <a href="#contact"    id="fnav-contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/zahin002"   target="_blank" rel="noopener" id="fsoc-gh"  aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/md-zahin-uddin-nirob-794ba2305" target="_blank" rel="noopener" id="fsoc-li"  aria-label="LinkedIn">LI</a>
+          <a href="mailto:zahinuddinnirob001@gmail.com" id="fsoc-em"  aria-label="Email">EM</a>
+          <a href="https://www.instagram.com/zahin_002_" target="_blank" rel="noopener" id="fsoc-ig"  aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/zahin.uddin005" target="_blank" rel="noopener" id="fsoc-fb"  aria-label="Facebook">FB</a>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span class="footer-year"></span> MD Zahin Uddin Nirob</span>
+          <span class="footer-motto">Built with curiosity, organized with intention.</span>
+          <a href="#hero" class="back-top" id="back-to-top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
